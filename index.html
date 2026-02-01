@@ -1,145 +1,70 @@
-{
-	"info": {
-		"_postman_id": "542e062e-091a-40a0-98c5-4ea8548411f9",
-		"name": "Google Place APIs",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "Add Place API",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"location\": {\n    \"lat\": -38.383494,\n    \"lng\": 33.427362\n  },\n  \"accuracy\": 50,\n  \"name\": \"Frontline house\",\n  \"phone_number\": \"(+91) 983 893 3937\",\n  \"address\": \"29, side layout, cohen 09\",\n  \"types\": [\n    \"shoe park\",\n    \"shop\"\n  ],\n  \"website\": \"http://google.com\",\n  \"language\": \"French-IN\"\n}"
-				},
-				"url": {
-					"raw": "https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123",
-					"protocol": "https",
-					"host": [
-						"rahulshettyacademy",
-						"com"
-					],
-					"path": [
-						"maps",
-						"api",
-						"place",
-						"add",
-						"json"
-					],
-					"query": [
-						{
-							"key": "key",
-							"value": "qaclick123"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get Place API",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://rahulshettyacademy.com/maps/api/place/get/json?place_id=cbeef2741cce7486303e61bbc3df2945&key=qaclick123",
-					"protocol": "http",
-					"host": [
-						"rahulshettyacademy",
-						"com"
-					],
-					"path": [
-						"maps",
-						"api",
-						"place",
-						"get",
-						"json"
-					],
-					"query": [
-						{
-							"key": "place_id",
-							"value": "cbeef2741cce7486303e61bbc3df2945"
-						},
-						{
-							"key": "key",
-							"value": "qaclick123"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update Place API",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\"place_id\":\"cbeef2741cce7486303e61bbc3df2945\",\n\"address\":\"70 winter walk, USA\",\n\"key\":\"qaclick123\"\n}"
-				},
-				"url": {
-					"raw": "https://rahulshettyacademy.com/maps/api/place/update/json?place_id=cbeef2741cce7486303e61bbc3df2945&key=qaclick123",
-					"protocol": "https",
-					"host": [
-						"rahulshettyacademy",
-						"com"
-					],
-					"path": [
-						"maps",
-						"api",
-						"place",
-						"update",
-						"json"
-					],
-					"query": [
-						{
-							"key": "place_id",
-							"value": "cbeef2741cce7486303e61bbc3df2945"
-						},
-						{
-							"key": "key",
-							"value": "qaclick123"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete Place API",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\n    \"place_id\":\"cbeef2741cce7486303e61bbc3df2945\"\n}\n"
-				},
-				"url": {
-					"raw": "https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123",
-					"protocol": "https",
-					"host": [
-						"rahulshettyacademy",
-						"com"
-					],
-					"path": [
-						"maps",
-						"api",
-						"place",
-						"delete",
-						"json"
-					],
-					"query": [
-						{
-							"key": "key",
-							"value": "qaclick123"
-						}
-					]
-				}
-			},
-			"response": []
-		}
-	]
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Just Something I Wanted to Say</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Segoe UI", sans-serif;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      max-width: 700px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    h1 {
+      color: #ff5e7e;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #333;
+    }
+    .heart {
+      font-size: 40px;
+      animation: beat 1.2s infinite;
+      margin-top: 20px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Hey, I Know This Was Random…</h1>
+    <p>
+      I know it was a random request. And then we started talking, and it felt like a good thing.
+      It was unexpected.<br><br>
+
+      A few unexpected things happened, and most of the time it felt like we were on the same page.
+      Maybe even our thinking felt the same.<br><br>
+
+      I know it’s too early, but I just wanted to tell you that you are awesome.<br><br>
+
+      Talking for five to six hours on the first day, and then waking up the next morning with you
+      being the first thought — that meant something to me.<br><br>
+
+      Thank you for this.
+    </p>
+    <div class="heart">❤️</div>
+  </div>
+
+</body>
+</html>
